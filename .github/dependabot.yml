@@ -1,0 +1,104 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/backend"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - python
+  ignore:
+  - dependency-name: boto3
+    versions:
+    - 1.17.21
+    - 1.17.22
+    - 1.17.23
+    - 1.17.24
+    - 1.17.25
+    - 1.17.26
+    - 1.17.27
+    - 1.17.28
+    - 1.17.29
+    - 1.17.30
+    - 1.17.31
+    - 1.17.32
+    - 1.17.33
+    - 1.17.34
+    - 1.17.35
+    - 1.17.36
+    - 1.17.37
+    - 1.17.38
+    - 1.17.39
+    - 1.17.40
+    - 1.17.41
+    - 1.17.42
+    - 1.17.43
+    - 1.17.44
+    - 1.17.45
+    - 1.17.46
+    - 1.17.47
+    - 1.17.48
+    - 1.17.49
+    - 1.17.50
+    - 1.17.51
+    - 1.17.52
+    - 1.17.53
+    - 1.17.54
+    - 1.17.55
+    - 1.17.56
+    - 1.17.57
+    - 1.17.58
+    - 1.17.59
+    - 1.17.60
+  - dependency-name: fcm-django
+    versions:
+    - 0.3.8
+  - dependency-name: django
+    versions:
+    - 3.1.7
+    - 3.1.8
+  - dependency-name: django-extensions
+    versions:
+    - 3.1.1.post1
+    - 3.1.2
+  - dependency-name: djangorestframework
+    versions:
+    - 3.12.2
+    - 3.12.3
+  - dependency-name: pillow
+    versions:
+    - 8.1.1
+    - 8.1.2
+  - dependency-name: cryptography
+    versions:
+    - 3.4.6
+  commit-message:
+    prefix: Crowdbotics
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - javascript
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: react-navigation-drawer
+    versions:
+    - 2.7.0
+  - dependency-name: react-native
+    versions:
+    - 0.62.2
+  - dependency-name: metro-react-native-babel-preset
+    versions:
+    - 0.65.2
+  - dependency-name: "@react-navigation/native"
+    versions:
+    - 5.9.3
+  commit-message:
+    prefix: Crowdbotics
